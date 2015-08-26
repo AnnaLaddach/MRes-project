@@ -1,4 +1,7 @@
-#Script to analyse and plot the relative frequency of cysteine conservation from IGHD2 germline gene segments in their second reading frame in relation to CDR3 length. Only those D segments assigned enough nucleotides to ensure both cysteines were included in the initial recombination event are used for analysis (>24 nucleotides for IGHD2-2, 2-15 and 2-8; >21 nucleotides for IGHD2-21). A textfile listing IMGT output folders and output file name are taken as input. Optionally sequence frequency information can be included - a regex must be supplied to extract this from the sequence ID.
+#Script to analyse and plot the relative frequency of cysteine conservation from IGHD2 germline gene segments in their second reading frame in relation to CDR3 length. 
+#Only those D segments assigned enough nucleotides to ensure both cysteines were included in the initial recombination event are used for analysis (>24 nucleotides for IGHD2-2, 2-15 and 2-8; >21 nucleotides for IGHD2-21). 
+#A textfile listing IMGT output folders and output file name are taken as input. 
+#Optionally sequence frequency information can be included - a regex must be supplied to extract this from the sequence ID.
 
 import sys
 import csv
