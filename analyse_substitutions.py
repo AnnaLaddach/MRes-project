@@ -1,4 +1,4 @@
-#Script to analyse and plot amino acid substitutions from germline IGHD2-2*, IGHD2-15*, IGHD2-8*01, IGHD2-8*02, IGHD3-3, IGHD3-9*, IGHD3-10* and IGHD3-22* gene segments
+#Script to analyse and plot amino acid substitutions from germline IGHD2-2*, IGHD2-15*, IGHD2-8*01, IGHD2-8*02, IGHD3-3*, IGHD3-9*, IGHD3-10* and IGHD3-22* gene segments
 #A textfile listing IMGT output folders, output file name and germline gene segment name are taken as input. 
 #Optionally sequence frequency information can be included - a regex must be supplied to extract this from the sequence ID.
 
@@ -27,7 +27,7 @@ def main(argv):
 
 #global constants
 seq_dict = {'IGHD2-2*':'SSTS','IGHD2-15*':'SGGS', 'IGHD2-8*01':'TNGV', 'IGHD2-8*02':'TNGV',\
-            'IGHD3-3':'FWSG', 'IGHD3-9*':'ILTG', 'IGHD3-10*':'GSGS', 'IGHD3-22*':'DSSG'}
+            'IGHD3-3*':'FWSG', 'IGHD3-9*':'ILTG', 'IGHD3-10*':'GSGS', 'IGHD3-22*':'DSSG'}
 amino_acids = ['P','G','A','V', 'L', 'I', 'F', 'Y', 'W',\
         'M', 'C', 'S', 'T', 'N', 'Q', 'H', 'K', 'R', 'D', 'E']
 
@@ -95,16 +95,16 @@ def substitutions(folders, outfile, germline, regex = None, frequency = False):
     try:
         seq = seq_dict[germline]
     except:
-        print 'Make sure germline is one of IGHD2-2*, IGHD2-15*, IGHD2-8*01, IGHD2-8*02, IGHD3-3, IGHD3-9*, IGHD3-10*, IGHD3-22*'
+        print 'Make sure germline is one of IGHD2-2*, IGHD2-15*, IGHD2-8*01, IGHD2-8*02, IGHD3-3*, IGHD3-9*, IGHD3-10*, IGHD3-22*'
         return False
     if germline in ['IGHD2-2*','IGHD2-15*','IGHD2-8*01','IGHD2-8*02']:
         pat = re.compile('(?:tgt|tgc)(.{12})(?:tgt|tgc)')
-    elif germline in ['IGHD3-3','IGHD3-9*']:
+    elif germline in ['IGHD3-3*','IGHD3-9*']:
         pat = re.compile('(?:gat|gac)(.{12})(?:tat|tac)')
     elif germline in ['IGHD3-10*', 'IGHD3-22*']:
         pat = re.compile('(?:tat|tac)(.{12})(?:tat|tac)')
     else:
-        print 'Make sure you have germline is one of IGHD2-2*, IGHD2-15*, IGHD2-8*01, IGHD2-8*02, IGHD3-3, IGHD3-9*, IGHD3-10*, IGHD3-22*'
+        print 'Make sure you have germline is one of IGHD2-2*, IGHD2-15*, IGHD2-8*01, IGHD2-8*02, IGHD3-3*, IGHD3-9*, IGHD3-10*, IGHD3-22*'
         return False
     for folder in folders:
         with open(folder[0] + '/6_Junction.txt') as f:
