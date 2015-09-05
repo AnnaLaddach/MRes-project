@@ -1,4 +1,4 @@
-#Functions to analyse D gene segment distributions of CDR3s with a certian property. 
+#Functions to analyse D gene segment distributions of CDR3s with a certain property. 
 #A textfile listing IMGT output folders and output file name are taken as input by 'plot_dsegs'. 
 #Additionally a fuction to determine whether CDR3s satisfy a certain property must be supplied as an input argument.
 #These are included in helper_functions.py.
