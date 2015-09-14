@@ -1,5 +1,5 @@
-#Script to analyse and plot the relative frequency of CDR3s containing two or more cysteines in relationtionship to CDR3 length.
-#Naive simulations using the codon based and mammlian protein based frequency of the occurence as weel as CDR3 length distributions are also plotted. 
+#Script to analyse and plot the relative frequency of CDR3s containing two or more cysteines in relationship to CDR3 length.
+#Naive simulations using the codon based and mammlian protein based frequency of the occurence as well as CDR3 length distributions are also plotted. 
 #A textfile listing IMGT output folders and output file name are taken as input. 
 #Optionally sequence frequency information can be included - a regex must be supplied to extract this from the sequence ID.
 
