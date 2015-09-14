@@ -1,4 +1,4 @@
-#miscallaneous helper functions to be used by scripts which analyse CDR3s
+#miscellaneous helper functions to be used by scripts which analyse CDR3s
 
 import re
 
