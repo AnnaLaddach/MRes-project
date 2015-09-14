@@ -1,4 +1,4 @@
-#Script to analyse and plot the positioning of CDR3 5' and 3' cysteines in relationtionship to CDR3 length. 
+#Script to analyse and plot the positioning of CDR3 5' and 3' cysteines in relationship to CDR3 length. 
 #A textfile listing IMGT output folders and output file name are taken as input. 
 #Optionally sequence frequency information can be included - a regex must be supplied to extract this from the sequence ID.
 
