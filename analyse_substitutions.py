@@ -26,7 +26,7 @@ def main(argv):
 
 
 #global constants
-seq_dict = {'IGHD2-2*':'SSTS','IGHD2-15*':'SGGS', 'IGHD2-8*01':'TNGV', 'IGHD2-8*02':'TNGV',\
+seq_dict = {'IGHD2-2*':'SSTS','IGHD2-15*':'SGGS', 'IGHD2-8*01':'TNGV', 'IGHD2-8*02':'TGGV',\
             'IGHD3-3*':'FWSG', 'IGHD3-9*':'ILTG', 'IGHD3-10*':'GSGS', 'IGHD3-22*':'DSSG'}
 amino_acids = ['P','G','A','V', 'L', 'I', 'F', 'Y', 'W',\
         'M', 'C', 'S', 'T', 'N', 'Q', 'H', 'K', 'R', 'D', 'E']
